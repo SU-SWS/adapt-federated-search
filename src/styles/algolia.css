@@ -1,0 +1,51 @@
+.ais-Pagination-list {
+  @apply py-2;
+}
+.ais-Pagination-item {
+  @apply inline-block px-2 text-lg;
+}
+
+.ais-Pagination-item:hover {
+  @apply underline text-red-900;
+}
+
+.ais-Pagination-item--selected {
+  @apply text-red-900;
+}
+
+.ais-SearchBox {
+  @apply w-full;
+}
+.ais-SearchBox-input {
+  width: calc(100% - 8rem);
+  @apply border-b border-black text-2xl mr-4;
+}
+.ais-SearchBox-input:focus {
+  outline: none;
+}
+
+.ais-SearchBox-submit {
+  @apply bg-red-900 p-3 rounded-full;
+}
+.ais-SearchBox-submit:hover {
+  @apply bg-black;
+}
+
+.ais-SearchBox-submitIcon {
+  @apply w-4 h-4 text-white stroke-current fill-current;
+}
+.ais-SearchBox-reset {
+  display: none;
+  stroke: white;
+}
+
+.ais-RefinementList-checkbox {
+  @apply mr-2 align-middle w-4 h-4;
+}
+
+.ais-RefinementList-labelText {
+  @apply text-lg;
+}
+.ais-RefinementList-count {
+  @apply bg-gray-200 py-0.5 px-1 rounded text-sm;
+}
