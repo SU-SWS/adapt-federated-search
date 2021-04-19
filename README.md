@@ -16,8 +16,9 @@ Here's some additional info on how this works:
 
 1. The entry script is [export/index.js](./export/index.js). This file just does a couple of things:
     - Loads React.
-    -  Imports the stylesheet.
-    - Tells the script to mount the `<Search>` component in the DOM on the element with the id of 'standalone-search'.
+    - Imports the stylesheet.
+    - Grabs configuration parameters from the data attributes of the mounting element.
+    - Tells the script to mount the `<Search>` component in the DOM on the mounting element with the id of 'standalone-search'.
 
 1. To use the search component on another site, you will need to:
     1. Run `npm run export` to run the build process.
