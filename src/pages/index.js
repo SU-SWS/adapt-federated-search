@@ -4,8 +4,6 @@ const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const apiKey = process.env.GATSBY_ALGOLIA_API_KEY;
 const indexName = process.env.GATSBY_ALGOLIA_INDEX_NAME;
 
-console.log('index', process.env.indexName);
-
 // markup
 const IndexPage = () => {
   return (
