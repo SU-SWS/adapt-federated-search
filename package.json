@@ -1,0 +1,36 @@
+{
+  "name": "adapt-federated-search-proof-of-concept",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ADAPT Federated Search Proof-of-Concept",
+  "author": "Nathan Plowman",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "export": "NODE_ENV=production webpack --config export/webpack.config.js"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.8.6",
+    "debounce": "^1.2.1",
+    "gatsby": "^3.2.1",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "postcss-import": "^14.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-instantsearch-dom": "^6.10.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "gatsby-plugin-postcss": "^4.2.0",
+    "mini-css-extract-plugin": "^1.5.0",
+    "postcss": "^8.2.10",
+    "tailwindcss": "^2.1.1",
+    "webpack-cli": "^4.6.0"
+  }
+}
