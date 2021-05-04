@@ -5,7 +5,7 @@ module.exports = function(_env, argv) {
   return {
     entry: "./export/index.js",
     output: {
-      path: path.resolve(__dirname, "../dist"),
+      path: path.resolve(__dirname, "../public/dist"),
       filename: "build.js",
       publicPath: "/"
     },
