@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build && npm run export",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "export": "NODE_ENV=production webpack --config export/webpack.config.js"
