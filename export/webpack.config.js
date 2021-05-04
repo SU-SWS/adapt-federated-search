@@ -9,11 +9,6 @@ module.exports = function(_env, argv) {
       filename: "build.js",
       publicPath: "/"
     },
-    plugins: [
-      new MiniCssExtractPlugin({
-        filename: 'search.css',
-      })
-    ],
     module: {
       rules: [
         {
@@ -31,7 +26,6 @@ module.exports = function(_env, argv) {
         {
           test: /\.css$/,
           use: [
-            MiniCssExtractPlugin.loader,
             'css-loader',
             'postcss-loader'
           ]
