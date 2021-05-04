@@ -26,6 +26,7 @@ module.exports = function(_env, argv) {
         {
           test: /\.css$/,
           use: [
+            'style-loader',
             'css-loader',
             'postcss-loader'
           ]
