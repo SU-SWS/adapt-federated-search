@@ -5,15 +5,10 @@ module.exports = function(_env, argv) {
   return {
     entry: "./export/index.js",
     output: {
-      path: path.resolve(__dirname, "../dist"),
+      path: path.resolve(__dirname, "../public/dist"),
       filename: "build.js",
       publicPath: "/"
     },
-    plugins: [
-      new MiniCssExtractPlugin({
-        filename: 'search.css',
-      })
-    ],
     module: {
       rules: [
         {
@@ -31,7 +26,7 @@ module.exports = function(_env, argv) {
         {
           test: /\.css$/,
           use: [
-            MiniCssExtractPlugin.loader,
+            'style-loader',
             'css-loader',
             'postcss-loader'
           ]
